@@ -17,3 +17,5 @@ mymuduo:$(OBJS)
 
 clean:
 	rm -f $(OBJS)
+
+.PHONY:clean ALL
