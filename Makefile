@@ -13,3 +13,7 @@ $(OBJS):%.o:%.cpp
 
 mymuduo:$(OBJS)
 	g++ -shared -o libmymuduo.so $^
+
+
+clean:
+	rm -f $(OBJS)
