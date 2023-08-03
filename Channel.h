@@ -28,7 +28,7 @@ public:
     int fd() const {return fd_;}
     int events() const {return events_;}
     // int set_events(int revt) {revents_ = revt;}
-    void set_events(int revt) {revents_ = revt;}
+    void set_revents(int revt) {revents_ = revt;}
 
     void enableReading() { events_ |= kReadEvent; update(); }
     void disableReading() { events_ &= ~kReadEvent; update(); }
