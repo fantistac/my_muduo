@@ -13,6 +13,7 @@
 class Channel;
 class EventLoop;
 class Socket;
+class Buffer;
 
 /**
  * TcpServer => Acceptor => 有一个新用户连接，通过accept函数拿到connfd
