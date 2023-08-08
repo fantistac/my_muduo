@@ -5,14 +5,16 @@ OBJS := $(patsubst %.cpp, %.o, $(SRCS))
 
 
 
-ALL:mymuduo
+ALL:libmymuduo.so
 
 $(OBJS):%.o:%.cpp
 	g++ -c $< -o $@ -fPIC
 
 
-mymuduo:$(OBJS)
+libmymuduo.so:$(OBJS)
 	g++ -shared -o libmymuduo.so $^
+
+
 
 
 clean:
